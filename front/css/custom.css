@@ -1,0 +1,39 @@
+.loader
+{
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  height: 70%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.loader img
+{
+  left: 30px;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Opcional: Ajustes adicionales para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .loader img {
+    left: 8%;
+    top: 50%;
+    max-width: 100%; /* Ajuste de tamaño para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .loader img {
+    left: 8%;
+    top: 55%;
+    max-width: 100%; /* Ajuste de tamaño para pantallas muy pequeñas */
+  }
+}
